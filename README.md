@@ -70,11 +70,6 @@ Testname: TC_05_checkoutWithPGUandSU.test.js
 - Clone (OR) Download this repo as zip folder on to your local machine
 - Navigate to project's directory on terminal and run the following commands:
 
-Clone the repository
-```bash
-git clone https://github.com/JayKishoreDuvvuri/Playwright-SauceDemo-BrowserStack.git
-```
-
 #### Run tests on BrowserStack
 ```bash
 npm run test:smoke - Runs test on chrome@latest:Windows 10
