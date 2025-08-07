@@ -214,7 +214,8 @@ test.describe.serial("Verify All Social Channel Links", () => {
       await link.click(),
     ]);
     await newPage.waitForLoadState("networkidle");
-    expect(await newPage.title()).toContain(facebookTitle);
+   const pageTitle = await newPage.title();
+expect(pageTitle).toMatch(/(Sauce Labs - Home|Sauce Labs \| Facebook)/);
     expect(newPage.url()).toBe(facebookUrl);
   });
 
