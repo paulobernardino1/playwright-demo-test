@@ -258,6 +258,6 @@ expect(pageTitle).toMatch(/(Sauce Labs - Home|Sauce Labs \| Facebook)/);
     ]);
     await newPage.waitForLoadState("domcontentloaded");
     await newPage.waitForLoadState("networkidle");
-    expect(newPage.url()).toBe(twitterUrl);
+    expect(newPage.url()).toMatch(/(twitter\.com|x\.com)\/saucelabs/);
   });
 });
