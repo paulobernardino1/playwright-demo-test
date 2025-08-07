@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # ou ubuntu-22.04 se quiser garantir
 
     steps:
       - name: Checkout code
@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install  # <- removido o --with-deps
 
       - name: Run Playwright tests
         run: npx playwright test
